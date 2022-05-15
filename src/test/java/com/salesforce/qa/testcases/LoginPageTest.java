@@ -13,7 +13,6 @@ import org.testng.asserts.SoftAssert;
 
 import com.salesforce.qa.base.TestBase;
 import com.salesforce.qa.pages.DashboardPage;
-import com.salesforce.qa.pages.HomePage;
 import com.salesforce.qa.pages.LoginPage;
 import com.salesforce.qa.util.NALExcelXLSReader;
 
@@ -56,7 +55,7 @@ public class LoginPageTest extends TestBase {
 	public void validateLoginNegativeScenarios(String username,String password) {
 		SoftAssert softAssert=new SoftAssert();
 		dashboardPage=loginPage.login(username,password);
-		softAssert.assertNotEquals(driver.getTitle(), "Home | Salesforce");
+		softAssert.assertNotEquals(dashboardPage.getDashboardPageTitle(), "Home | Salesforce");
 		softAssert.assertAll();
 		
 	}
