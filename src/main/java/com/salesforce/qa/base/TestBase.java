@@ -8,14 +8,17 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class TestBase {
 	
 	public static WebDriver driver;
 	public static FileInputStream fileInput;
 	public static Properties prop;
+	public static ChromeOptions chromeOptions;
 	
 	public TestBase() {
 		try {
@@ -37,12 +40,14 @@ public class TestBase {
 		switch(prop.getProperty("browser")) {
 		
 		case "chrome":
+			chromeOptions=new ChromeOptions();
+			chromeOptions.addArguments("--disable-notifications");
 			System.setProperty(prop.getProperty("system_property_chrome"), prop.getProperty("chromedriver_path"));
-			driver=new ChromeDriver();
+			driver=new ChromeDriver(chromeOptions);
 			break;
 		
 		case "firefox":
-			System.setProperty(prop.getProperty("geckodriver_path"), prop.getProperty("geckodriver_path"));
+			System.setProperty(prop.getProperty("system_property_firefox"), prop.getProperty("geckodriver_path"));
 			driver=new FirefoxDriver();
 			break;
 			
@@ -55,8 +60,8 @@ public class TestBase {
 		
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Long.valueOf(prop.getProperty("PageLoadTimeOut"))));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.valueOf(prop.getProperty("ImplicitlyWait"))));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Long.valueOf(prop.getProperty("pageLoadTimeOut"))));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.valueOf(prop.getProperty("implicitlyWait"))));
 		driver.get(prop.getProperty("url"));
 		
 	}
