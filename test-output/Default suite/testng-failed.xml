@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.salesforce.qa.testdata.DashboardPageTest">
+      <class name="com.salesforce.testcases.LoginPageTest">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyAllTabsOnDashboardPage"/>
+          <include name="tearDown"/>
+          <include name="validateLoginNegativeScenarios" invocation-numbers="0 1 2 3 4 5 6"/>
         </methods>
-      </class> <!-- com.salesforce.qa.testdata.DashboardPageTest -->
+      </class> <!-- com.salesforce.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
