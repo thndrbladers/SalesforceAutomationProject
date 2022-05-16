@@ -1,0 +1,9 @@
+com\salesforce\pages\TasksPage.class
+com\salesforce\pages\AccountsPage.class
+com\salesforce\util\NALExcelXLSReader.class
+com\salesforce\pages\HomePage.class
+com\salesforce\pages\ContactsPage.class
+com\salesforce\base\TestBase.class
+com\salesforce\pages\LoginPage.class
+com\salesforce\pages\DashboardPage.class
+com\salesforce\pages\ForgotYourPasswordPage.class
