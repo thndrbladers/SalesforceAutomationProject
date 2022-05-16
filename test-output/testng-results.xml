@@ -1,187 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="8" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-16T02:06:53 IST" name="Default suite" finished-at="2022-05-16T02:07:20 IST" duration-ms="27620">
+  <suite started-at="2022-05-16T12:08:44 IST" name="Default suite" finished-at="2022-05-16T12:08:57 IST" duration-ms="12461">
     <groups>
+      <group name="negative">
+        <method signature="DashboardPageTest.verifyAllTabsOnDashboardPage()[pri:0, instance:com.salesforce.testcases.DashboardPageTest@4044fb95]" name="verifyAllTabsOnDashboardPage" class="com.salesforce.testcases.DashboardPageTest"/>
+      </group> <!-- negative -->
       <group name="regression">
-        <method signature="LoginPageTest.validateLoginNegativeScenarios(java.lang.String,java.lang.String)[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" name="validateLoginNegativeScenarios" class="com.salesforce.testcases.LoginPageTest"/>
+        <method signature="DashboardPageTest.verifyAllTabsOnDashboardPage()[pri:0, instance:com.salesforce.testcases.DashboardPageTest@4044fb95]" name="verifyAllTabsOnDashboardPage" class="com.salesforce.testcases.DashboardPageTest"/>
       </group> <!-- regression -->
       <group name="sanity">
-        <method signature="LoginPageTest.validateLoginNegativeScenarios(java.lang.String,java.lang.String)[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" name="validateLoginNegativeScenarios" class="com.salesforce.testcases.LoginPageTest"/>
+        <method signature="DashboardPageTest.verifyAllTabsOnDashboardPage()[pri:0, instance:com.salesforce.testcases.DashboardPageTest@4044fb95]" name="verifyAllTabsOnDashboardPage" class="com.salesforce.testcases.DashboardPageTest"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2022-05-16T02:06:53 IST" name="Default test" finished-at="2022-05-16T02:07:20 IST" duration-ms="27620">
-      <class name="com.salesforce.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" started-at="2022-05-16T02:06:53 IST" name="setUp" finished-at="2022-05-16T02:06:57 IST" duration-ms="3451" status="PASS">
+    <test started-at="2022-05-16T12:08:44 IST" name="Default test" finished-at="2022-05-16T12:08:57 IST" duration-ms="12461">
+      <class name="com.salesforce.testcases.DashboardPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.salesforce.testcases.DashboardPageTest@4044fb95]" started-at="2022-05-16T12:08:44 IST" name="setUp" finished-at="2022-05-16T12:08:50 IST" duration-ms="6399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateLoginNegativeScenarios(java.lang.String,java.lang.String)[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" started-at="2022-05-16T02:06:57 IST" name="validateLoginNegativeScenarios" data-provider="loginTestData" finished-at="2022-05-16T02:06:57 IST" duration-ms="422" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifyAllTabsOnDashboardPage()[pri:0, instance:com.salesforce.testcases.DashboardPageTest@4044fb95]" started-at="2022-05-16T12:08:50 IST" name="verifyAllTabsOnDashboardPage" finished-at="2022-05-16T12:08:56 IST" duration-ms="5748" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateLoginNegativeScenarios -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" started-at="2022-05-16T02:06:57 IST" name="tearDown" finished-at="2022-05-16T02:06:57 IST" duration-ms="150" status="PASS">
+        </test-method> <!-- verifyAllTabsOnDashboardPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforce.testcases.DashboardPageTest@4044fb95]" started-at="2022-05-16T12:08:56 IST" name="tearDown" finished-at="2022-05-16T12:08:57 IST" duration-ms="251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" started-at="2022-05-16T02:06:57 IST" name="setUp" finished-at="2022-05-16T02:07:00 IST" duration-ms="2379" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateLoginNegativeScenarios(java.lang.String,java.lang.String)[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" started-at="2022-05-16T02:07:00 IST" name="validateLoginNegativeScenarios" data-provider="loginTestData" finished-at="2022-05-16T02:07:00 IST" duration-ms="440" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[username]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLoginNegativeScenarios -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" started-at="2022-05-16T02:07:00 IST" name="tearDown" finished-at="2022-05-16T02:07:00 IST" duration-ms="180" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" started-at="2022-05-16T02:07:00 IST" name="setUp" finished-at="2022-05-16T02:07:03 IST" duration-ms="2335" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateLoginNegativeScenarios(java.lang.String,java.lang.String)[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" started-at="2022-05-16T02:07:03 IST" name="validateLoginNegativeScenarios" data-provider="loginTestData" finished-at="2022-05-16T02:07:08 IST" duration-ms="5518" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[rahuldevghosh1993-gcqu@force.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[@Temp12345678]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLoginNegativeScenarios -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" started-at="2022-05-16T02:07:08 IST" name="tearDown" finished-at="2022-05-16T02:07:08 IST" duration-ms="166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" started-at="2022-05-16T02:07:08 IST" name="setUp" finished-at="2022-05-16T02:07:11 IST" duration-ms="2424" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateLoginNegativeScenarios(java.lang.String,java.lang.String)[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" started-at="2022-05-16T02:07:11 IST" name="validateLoginNegativeScenarios" data-provider="loginTestData" finished-at="2022-05-16T02:07:11 IST" duration-ms="443" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[rahuldevghosh1993-gcqu@force.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[@Temp1234567]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLoginNegativeScenarios -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" started-at="2022-05-16T02:07:11 IST" name="tearDown" finished-at="2022-05-16T02:07:11 IST" duration-ms="179" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" started-at="2022-05-16T02:07:11 IST" name="setUp" finished-at="2022-05-16T02:07:14 IST" duration-ms="2466" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateLoginNegativeScenarios(java.lang.String,java.lang.String)[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" started-at="2022-05-16T02:07:14 IST" name="validateLoginNegativeScenarios" data-provider="loginTestData" finished-at="2022-05-16T02:07:14 IST" duration-ms="425" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[@Temp12345678]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[rahuldevghosh1993-gcqu@force.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLoginNegativeScenarios -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" started-at="2022-05-16T02:07:14 IST" name="tearDown" finished-at="2022-05-16T02:07:14 IST" duration-ms="188" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" started-at="2022-05-16T02:07:14 IST" name="setUp" finished-at="2022-05-16T02:07:17 IST" duration-ms="2403" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateLoginNegativeScenarios(java.lang.String,java.lang.String)[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" started-at="2022-05-16T02:07:17 IST" name="validateLoginNegativeScenarios" data-provider="loginTestData" finished-at="2022-05-16T02:07:17 IST" duration-ms="370" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLoginNegativeScenarios -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" started-at="2022-05-16T02:07:17 IST" name="tearDown" finished-at="2022-05-16T02:07:17 IST" duration-ms="191" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" started-at="2022-05-16T02:07:17 IST" name="setUp" finished-at="2022-05-16T02:07:20 IST" duration-ms="2357" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateLoginNegativeScenarios(java.lang.String,java.lang.String)[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" started-at="2022-05-16T02:07:20 IST" name="validateLoginNegativeScenarios" data-provider="loginTestData" finished-at="2022-05-16T02:07:20 IST" duration-ms="439" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[rahuldevghosh1993-gcqu@force.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLoginNegativeScenarios -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforce.testcases.LoginPageTest@aa549e5]" started-at="2022-05-16T02:07:20 IST" name="tearDown" finished-at="2022-05-16T02:07:20 IST" duration-ms="179" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.salesforce.testcases.LoginPageTest -->
+      </class> <!-- com.salesforce.testcases.DashboardPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
