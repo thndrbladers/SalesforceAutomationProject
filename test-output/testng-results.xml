@@ -2,29 +2,29 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-16T12:08:44 IST" name="Default suite" finished-at="2022-05-16T12:08:57 IST" duration-ms="12461">
+  <suite started-at="2022-05-16T22:52:40 IST" name="Default suite" finished-at="2022-05-16T22:52:53 IST" duration-ms="12497">
     <groups>
       <group name="negative">
-        <method signature="DashboardPageTest.verifyAllTabsOnDashboardPage()[pri:0, instance:com.salesforce.testcases.DashboardPageTest@4044fb95]" name="verifyAllTabsOnDashboardPage" class="com.salesforce.testcases.DashboardPageTest"/>
+        <method signature="DashboardPageTest.verifyAllTabsOnDashboardPage()[pri:0, instance:com.salesforce.testcases.DashboardPageTest@4b20ca2b]" name="verifyAllTabsOnDashboardPage" class="com.salesforce.testcases.DashboardPageTest"/>
       </group> <!-- negative -->
       <group name="regression">
-        <method signature="DashboardPageTest.verifyAllTabsOnDashboardPage()[pri:0, instance:com.salesforce.testcases.DashboardPageTest@4044fb95]" name="verifyAllTabsOnDashboardPage" class="com.salesforce.testcases.DashboardPageTest"/>
+        <method signature="DashboardPageTest.verifyAllTabsOnDashboardPage()[pri:0, instance:com.salesforce.testcases.DashboardPageTest@4b20ca2b]" name="verifyAllTabsOnDashboardPage" class="com.salesforce.testcases.DashboardPageTest"/>
       </group> <!-- regression -->
       <group name="sanity">
-        <method signature="DashboardPageTest.verifyAllTabsOnDashboardPage()[pri:0, instance:com.salesforce.testcases.DashboardPageTest@4044fb95]" name="verifyAllTabsOnDashboardPage" class="com.salesforce.testcases.DashboardPageTest"/>
+        <method signature="DashboardPageTest.verifyAllTabsOnDashboardPage()[pri:0, instance:com.salesforce.testcases.DashboardPageTest@4b20ca2b]" name="verifyAllTabsOnDashboardPage" class="com.salesforce.testcases.DashboardPageTest"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2022-05-16T12:08:44 IST" name="Default test" finished-at="2022-05-16T12:08:57 IST" duration-ms="12461">
+    <test started-at="2022-05-16T22:52:40 IST" name="Default test" finished-at="2022-05-16T22:52:53 IST" duration-ms="12497">
       <class name="com.salesforce.testcases.DashboardPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.salesforce.testcases.DashboardPageTest@4044fb95]" started-at="2022-05-16T12:08:44 IST" name="setUp" finished-at="2022-05-16T12:08:50 IST" duration-ms="6399" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.salesforce.testcases.DashboardPageTest@4b20ca2b]" started-at="2022-05-16T22:52:40 IST" name="setUp" finished-at="2022-05-16T22:52:44 IST" duration-ms="4383" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyAllTabsOnDashboardPage()[pri:0, instance:com.salesforce.testcases.DashboardPageTest@4044fb95]" started-at="2022-05-16T12:08:50 IST" name="verifyAllTabsOnDashboardPage" finished-at="2022-05-16T12:08:56 IST" duration-ms="5748" status="PASS">
+        <test-method signature="verifyAllTabsOnDashboardPage()[pri:0, instance:com.salesforce.testcases.DashboardPageTest@4b20ca2b]" started-at="2022-05-16T22:52:44 IST" name="verifyAllTabsOnDashboardPage" finished-at="2022-05-16T22:52:52 IST" duration-ms="7796" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAllTabsOnDashboardPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforce.testcases.DashboardPageTest@4044fb95]" started-at="2022-05-16T12:08:56 IST" name="tearDown" finished-at="2022-05-16T12:08:57 IST" duration-ms="251" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforce.testcases.DashboardPageTest@4b20ca2b]" started-at="2022-05-16T22:52:52 IST" name="tearDown" finished-at="2022-05-16T22:52:53 IST" duration-ms="264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
