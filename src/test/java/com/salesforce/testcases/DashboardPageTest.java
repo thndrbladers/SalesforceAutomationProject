@@ -25,7 +25,7 @@ public class DashboardPageTest extends TestBase {
 		super();
 	}
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setUp() {
 		initialization();
 		loginPage = new LoginPage();
@@ -33,7 +33,7 @@ public class DashboardPageTest extends TestBase {
 
 	}
 
-	@Test(groups = { "sanity", "regression"})
+	@Test(groups = { "sanity"})
 	public void verifyAllTabsOnDashboardPage() {
 
 		/*
@@ -48,7 +48,7 @@ public class DashboardPageTest extends TestBase {
 		List<String> tabsTextActual = dashboardPage.getTextOfAllTabs();
 		List<String> tabsTextExpected = new ArrayList<String>();
 
-		NALExcelXLSReader nal = new NALExcelXLSReader(prop.getProperty("SalesforceProjectTestDataPath"));
+		NALExcelXLSReader nal = new NALExcelXLSReader(System.getProperty("user.dir")+prop.getProperty("SalesforceProjectTestDataPath"));
 
 		int rowCount = nal.getRowCount("DashboardPageTabs");
 		int colCount = nal.getColumnCount("DashboardPageTabs");
@@ -66,14 +66,15 @@ public class DashboardPageTest extends TestBase {
 		softAssert.assertAll();
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 		close();
 	}
 
 	@DataProvider(name = "tabsData")
 	public Object[][] getTabsData() {
-		NALExcelXLSReader nal = new NALExcelXLSReader(prop.getProperty("SalesforceProjectTestDataPath"));
+
+		NALExcelXLSReader nal = new NALExcelXLSReader(System.getProperty("user.dir")+prop.getProperty("SalesforceProjectTestDataPath"));
 
 		int rowCount = nal.getRowCount("DashboardPageTabs");
 		int colCount = nal.getColumnCount("DashboardPageTabs");
