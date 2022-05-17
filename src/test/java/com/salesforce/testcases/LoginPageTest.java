@@ -30,21 +30,21 @@ public class LoginPageTest extends TestBase {
 		super();
 	}
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setUp() {
 		initialization();
 		loginPage=new LoginPage();
 		
 	}
 	
-	@Test(groups={"sanity","regression","positive"})
+	@Test(groups={"sanity","regression","B"})
 	public void loginPageTitleTest() {
 		Assert.assertEquals(loginPage.getLoginPageTitle(), "Login | Salesforce");
 		
 	}
 	
 	
-	@Test(groups={"sanity","regression"},dataProvider="loginTestData")
+	@Test(groups={"sanity","regression","A"},dataProvider="loginTestData")
 	public void validateLoginNegativeScenarios(String username,String password) {
 		//Wait wait=new WebDriverWait(driver, Duration.ofSeconds(5));
 		SoftAssert softAssert=new SoftAssert();
@@ -59,7 +59,7 @@ public class LoginPageTest extends TestBase {
 	}
 	
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 		close();
 		
@@ -68,11 +68,10 @@ public class LoginPageTest extends TestBase {
 	@DataProvider(name="loginTestData")
 	public Iterator<Object[]> getLoginTestData(){
 		List<Object[]> list=new ArrayList<>();
-		NALExcelXLSReader nal=new NALExcelXLSReader(prop.getProperty("SalesforceProjectTestDataPath"));
+		NALExcelXLSReader nal=new NALExcelXLSReader(System.getProperty("user.dir")+prop.getProperty("SalesforceProjectTestDataPath"));
 		
 		String sheetName="LoginTestData";
 		int rowSize=nal.getRowCount(sheetName);
-		System.out.println(rowSize);
 		
 		for(int i=0;i<rowSize;i++) {
 			list.add(new Object[] {nal.getCellData(sheetName, "username", i),nal.getCellData(sheetName, "password", i)});

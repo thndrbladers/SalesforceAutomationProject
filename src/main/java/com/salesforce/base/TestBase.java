@@ -42,17 +42,17 @@ public class TestBase {
 		case "chrome":
 			chromeOptions=new ChromeOptions();
 			chromeOptions.addArguments("--disable-notifications");
-			System.setProperty(prop.getProperty("system_property_chrome"), prop.getProperty("chromedriver_path"));
+			System.setProperty(prop.getProperty("system_property_chrome"), System.getProperty("user.dir")+prop.getProperty("chromedriver_path"));
 			driver=new ChromeDriver(chromeOptions);
 			break;
 		
 		case "firefox":
-			System.setProperty(prop.getProperty("system_property_firefox"), prop.getProperty("geckodriver_path"));
+			System.setProperty(prop.getProperty("system_property_firefox"),System.getProperty("user.dir")+ prop.getProperty("geckodriver_path"));
 			driver=new FirefoxDriver();
 			break;
 			
 		case "geckodriver":
-			System.setProperty(prop.getProperty("system_property_edge"), prop.getProperty("msedgedriver_path"));
+			System.setProperty(prop.getProperty("system_property_edge"),System.getProperty("user.dir")+ prop.getProperty("msedgedriver_path"));
 			driver=new EdgeDriver();
 			break;
 			
