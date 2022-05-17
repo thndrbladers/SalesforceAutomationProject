@@ -1,14 +1,7 @@
 package com.salesforce.testcases;
-
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -37,14 +30,14 @@ public class LoginPageTest extends TestBase {
 		
 	}
 	
-	@Test(groups={"sanity","regression","B"})
+	@Test(groups={"sanity","regression"})
 	public void loginPageTitleTest() {
 		Assert.assertEquals(loginPage.getLoginPageTitle(), "Login | Salesforce");
 		
 	}
 	
 	
-	@Test(groups={"sanity","regression","A"},dataProvider="loginTestData")
+	@Test(groups={"sanity","regression"},dataProvider="loginTestData")
 	public void validateLoginNegativeScenarios(String username,String password) {
 		//Wait wait=new WebDriverWait(driver, Duration.ofSeconds(5));
 		SoftAssert softAssert=new SoftAssert();
