@@ -43,7 +43,7 @@ public class LoginPageTest extends TestBase {
 		SoftAssert softAssert=new SoftAssert();
 		dashboardPage=loginPage.login(username,password);
 		if((username.equals(prop.getProperty("username"))) && (password.equals(prop.getProperty("password")))) {
-			softAssert.assertNotEquals(dashboardPage.getDashboardPageTitle(), "Login | Salesforce");
+			softAssert.assertEquals(dashboardPage.getDashboardPageTitle(), "Login | Salesforce");
 		}else {
 			softAssert.assertEquals(dashboardPage.getDashboardPageTitle(), "Login | Salesforce");
 		}
