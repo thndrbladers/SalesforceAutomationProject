@@ -9,6 +9,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import com.beust.jcommander.Parameter;
+import com.beust.jcommander.Parameters;
 import com.salesforce.base.TestBase;
 import com.salesforce.pages.DashboardPage;
 import com.salesforce.pages.LoginPage;
@@ -23,8 +25,9 @@ public class LoginPageTest extends TestBase {
 		super();
 	}
 	
+	
 	@BeforeMethod(alwaysRun = true)
-	public void setUp() {
+	public void setUp(String browser) {
 		initialization();
 		loginPage=new LoginPage();
 		
