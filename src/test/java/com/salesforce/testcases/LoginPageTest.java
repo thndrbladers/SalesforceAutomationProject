@@ -27,7 +27,7 @@ public class LoginPageTest extends TestBase {
 	
 	
 	@BeforeMethod(alwaysRun = true)
-	public void setUp(String browser) {
+	public void setUp() {
 		initialization();
 		loginPage=new LoginPage();
 		
