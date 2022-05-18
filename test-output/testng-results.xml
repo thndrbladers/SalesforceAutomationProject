@@ -2,26 +2,26 @@
 <testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-18T14:28:10 IST" name="Default suite" finished-at="2022-05-18T14:28:19 IST" duration-ms="9538">
+  <suite started-at="2022-05-18T19:33:08 IST" name="Default suite" finished-at="2022-05-18T19:33:38 IST" duration-ms="29667">
     <groups>
       <group name="regression">
-        <method signature="LoginPageTest.validateLogin()[pri:0, instance:com.salesforce.testcases.LoginPageTest@72758afa]" name="validateLogin" class="com.salesforce.testcases.LoginPageTest"/>
+        <method signature="LoginPageTest.validateLogin()[pri:0, instance:com.salesforce.testcases.LoginPageTest@2a3c96e3]" name="validateLogin" class="com.salesforce.testcases.LoginPageTest"/>
       </group> <!-- regression -->
       <group name="sanity">
-        <method signature="LoginPageTest.validateLogin()[pri:0, instance:com.salesforce.testcases.LoginPageTest@72758afa]" name="validateLogin" class="com.salesforce.testcases.LoginPageTest"/>
+        <method signature="LoginPageTest.validateLogin()[pri:0, instance:com.salesforce.testcases.LoginPageTest@2a3c96e3]" name="validateLogin" class="com.salesforce.testcases.LoginPageTest"/>
       </group> <!-- sanity -->
     </groups>
-    <test started-at="2022-05-18T14:28:10 IST" name="Default test" finished-at="2022-05-18T14:28:19 IST" duration-ms="9538">
+    <test started-at="2022-05-18T19:33:08 IST" name="Default test" finished-at="2022-05-18T19:33:38 IST" duration-ms="29667">
       <class name="com.salesforce.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.salesforce.testcases.LoginPageTest@72758afa]" started-at="2022-05-18T14:28:10 IST" name="setUp" finished-at="2022-05-18T14:28:14 IST" duration-ms="3646" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.salesforce.testcases.LoginPageTest@2a3c96e3]" started-at="2022-05-18T19:33:08 IST" name="setUp" finished-at="2022-05-18T19:33:20 IST" duration-ms="12184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateLogin()[pri:0, instance:com.salesforce.testcases.LoginPageTest@72758afa]" started-at="2022-05-18T14:28:14 IST" name="validateLogin" finished-at="2022-05-18T14:28:19 IST" duration-ms="5657" status="PASS">
+        <test-method signature="validateLogin()[pri:0, instance:com.salesforce.testcases.LoginPageTest@2a3c96e3]" started-at="2022-05-18T19:33:20 IST" name="validateLogin" finished-at="2022-05-18T19:33:36 IST" duration-ms="15851" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforce.testcases.LoginPageTest@72758afa]" started-at="2022-05-18T14:28:19 IST" name="tearDown" finished-at="2022-05-18T14:28:19 IST" duration-ms="185" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.salesforce.testcases.LoginPageTest@2a3c96e3]" started-at="2022-05-18T19:33:36 IST" name="tearDown" finished-at="2022-05-18T19:33:38 IST" duration-ms="1593" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
