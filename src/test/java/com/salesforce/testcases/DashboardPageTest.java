@@ -33,7 +33,7 @@ public class DashboardPageTest extends TestBase {
 
 	}
 
-	@Test(groups = { "sanity"})
+	@Test(groups = { "sanity","regression"})
 	public void verifyAllTabsOnDashboardPage() {
 
 		/*
