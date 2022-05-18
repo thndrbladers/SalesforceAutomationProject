@@ -17,6 +17,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
+import com.beust.jcommander.Parameter;
 import com.salesforce.util.BrowserStack;
 
 public class TestBase {
@@ -68,18 +69,20 @@ public class TestBase {
 
 		case "browserStack":
 			DesiredCapabilities caps = BrowserStack.getBrowserStackConfiguration();
-			
+
 			try {
 				driver = new RemoteWebDriver(new URL(BrowserStack.URL), caps);
 			} catch (MalformedURLException e) {
 				e.printStackTrace();
 			}
-			
-			JavascriptExecutor jse = (JavascriptExecutor)driver;
+
+			JavascriptExecutor jse = (JavascriptExecutor) driver;
 			// To mark the test as passed
-			jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"passed\", \"reason\": \"<reason>\"}}");
+			jse.executeScript(
+					"browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"passed\", \"reason\": \"<reason>\"}}");
 			// To mark the test as failed
-			jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"failed\", \"reason\": \"<reason>\"}}");
+			jse.executeScript(
+					"browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \"failed\", \"reason\": \"<reason>\"}}");
 			break;
 
 		}
