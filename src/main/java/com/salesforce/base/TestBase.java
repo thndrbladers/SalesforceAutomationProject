@@ -61,7 +61,7 @@ public class TestBase {
 			driver = new FirefoxDriver();
 			break;
 
-		case "geckodriver":
+		case "edge":
 			System.setProperty(prop.getProperty("system_property_edge"),
 					System.getProperty("user.dir") + prop.getProperty("msedgedriver_path"));
 			driver = new EdgeDriver();
