@@ -7,7 +7,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="validateLogin"/>
+          <include name="loginPageTitleTest"/>
         </methods>
       </class> <!-- com.salesforce.testcases.LoginPageTest -->
     </classes>
