@@ -36,17 +36,21 @@ public class LoginPageTest extends TestBase {
 		
 	}
 	
+	@Test(groups={"sanity","regression"})
+	public void validateLogin() {
+		String username=prop.getProperty("username");
+		String password=prop.getProperty("password");
+		dashboardPage=loginPage.login(username,password);
+		Assert.assertNotEquals(dashboardPage.getDashboardPageTitle(), "Login | Salesforce");	
+	}
 	
-	@Test(groups={"sanity","regression"},dataProvider="loginTestData")
+	
+	@Test(groups={"regression"},dataProvider="loginTestData")
 	public void validateLoginNegativeScenarios(String username,String password) {
 		//Wait wait=new WebDriverWait(driver, Duration.ofSeconds(5));
 		SoftAssert softAssert=new SoftAssert();
 		dashboardPage=loginPage.login(username,password);
-		if((username.equals(prop.getProperty("username"))) && (password.equals(prop.getProperty("password")))) {
-			softAssert.assertEquals(dashboardPage.getDashboardPageTitle(), "Login | Salesforce");
-		}else {
-			softAssert.assertEquals(dashboardPage.getDashboardPageTitle(), "Login | Salesforce");
-		}
+		softAssert.assertEquals(dashboardPage.getDashboardPageTitle(), "Login | Salesforce");
 		softAssert.assertAll();
 		
 	}
