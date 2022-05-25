@@ -17,10 +17,9 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.salesforce.base.TestBase;
+import com.salesforce.util.TestUtil;
 
 public class DashboardPage extends TestBase {
-	
-	Wait wait;
 	
 	public DashboardPage() {
 		PageFactory.initElements(driver,this);
@@ -29,16 +28,16 @@ public class DashboardPage extends TestBase {
 	//Object Repository - Elements
 	
 	@FindBy(xpath="//span[normalize-space()='Home']")
-	WebElement home;
+	WebElement homeTab;
 	
-	@FindBy(xpath="//span[normalize-space()='Accounts']")
-	WebElement accounts;
+	@FindBy(xpath="//a[@title='Accounts']")
+	WebElement accountsTab;
 	
 	@FindBy(xpath="//span[normalize-space()='Contacts']")
-	WebElement contacts;
+	WebElement contactsTab;
 	
 	@FindBy(xpath="//span[normalize-space()='Tasks']")
-	WebElement tasks;
+	WebElement tasksTab;
 	
 	@FindBy(xpath="//div[@class='overlay homeHeroChartOverlay'][@data-aura-class='homeHeroChartOverlay']")
 	WebElement quaterlyPerformanceChart;
@@ -97,17 +96,17 @@ public class DashboardPage extends TestBase {
 	}
 	
 	public ContactsPage clickOnContactsTab() {
-		contacts.click();
+		contactsTab.click();
 		return new ContactsPage();
 	}
 	
 	public AccountsPage clickOnAccountsTab() {
-		accounts.click();
+		TestUtil.executeJavascriptClick(accountsTab);
 		return new AccountsPage();
 	}
 	
 	public TasksPage clickOnTasksTab() {
-		tasks.click();
+		tasksTab.click();
 		return new TasksPage();
 	}
 	

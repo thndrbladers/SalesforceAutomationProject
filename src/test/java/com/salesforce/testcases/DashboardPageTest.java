@@ -59,9 +59,6 @@ public class DashboardPageTest extends TestBase {
 
 		Collections.sort(tabsTextExpected);
 
-		System.out.println(tabsTextActual);
-		System.out.println(tabsTextExpected);
-
 		softAssert.assertEquals(tabsTextActual, tabsTextExpected);
 		softAssert.assertAll();
 	}
@@ -69,23 +66,6 @@ public class DashboardPageTest extends TestBase {
 	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 		close();
-	}
-
-	@DataProvider(name = "tabsData")
-	public Object[][] getTabsData() {
-
-		NALExcelXLSReader nal = new NALExcelXLSReader(System.getProperty("user.dir")+prop.getProperty("SalesforceProjectTestDataPath"));
-
-		int rowCount = nal.getRowCount("DashboardPageTabs");
-		int colCount = nal.getColumnCount("DashboardPageTabs");
-
-		Object[][] tabsData = new Object[colCount][rowCount];
-
-		for (int i = 1; i < rowCount; i++) {
-			tabsData[1][i] = nal.getCellData("DashboardPageTabs", "dashboardPageTabs", i);
-		}
-
-		return tabsData.clone();
 	}
 
 }
