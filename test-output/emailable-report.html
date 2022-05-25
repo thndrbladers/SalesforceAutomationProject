@@ -8,11 +8,122 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4,349</td><td></td><td></td></tr>
+<tr><th colspan="8">Salesforce Project Test Sanity Automation Suite</th></tr>
+<tr><td><a href="#t0">Salesforce Sanity Test Cases</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num attn">4</td><td class="num">225,201</td><td>sanity</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.salesforce.testcases.LoginPageTest</td><td><a href="#m0">loginPageTitleTest</a></td><td rowspan="1">1652895247133</td><td rowspan="1">20</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Salesforce Project Test Sanity Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Salesforce Sanity Test Cases &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="2">com.salesforce.testcases.DashboardPageTest</td><td><a href="#m0">setUp</a></td><td rowspan="2">1653146876718</td><td rowspan="2">41825</td></tr><tr class="failedeven"><td><a href="#m1">setUp</a></td></tr><tr><th colspan="4">Salesforce Sanity Test Cases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.salesforce.testcases.AccountsPageTest</td><td><a href="#m2">verifyUserIsAbleToCreateNewAccount</a></td><td rowspan="1">1653146982042</td><td rowspan="1">45737</td></tr><tr class="failedodd"><td rowspan="1">com.salesforce.testcases.DashboardPageTest</td><td><a href="#m3">verifyAllTabsOnDashboardPage</a></td><td rowspan="1">1653146981903</td><td rowspan="1">1</td></tr><tr class="failedeven"><td rowspan="2">com.salesforce.testcases.LoginPageTest</td><td><a href="#m4">loginPageTitleTest</a></td><td rowspan="1">1653146802600</td><td rowspan="1">8263</td></tr><tr class="failedeven"><td><a href="#m5">validateLogin</a></td><td rowspan="1">1653146811191</td><td rowspan="1">29045</td></tr><tr><th colspan="4">Salesforce Sanity Test Cases &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="3">com.salesforce.testcases.DashboardPageTest</td><td><a href="#m6">verifyAllTabsOnDashboardPage</a></td><td rowspan="3">1653146945843</td><td rowspan="3">455</td></tr><tr class="retriedeven"><td><a href="#m7">verifyAllTabsOnDashboardPage</a></td></tr><tr class="retriedeven"><td><a href="#m8">verifyAllTabsOnDashboardPage</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.salesforce.testcases.LoginPageTest#loginPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Salesforce Sanity Test Cases</h2><h3 id="m0">com.salesforce.testcases.DashboardPageTest#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 30.000
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;RAHUL-DEV-GHOSH&apos;, ip: &apos;192.168.87.166&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [232e1d8a4572b15390f2752dfbf3e18f, clickElement {id=379ac2bb-738d-499d-abec-2c3910032fa5}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\thndr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50089}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50089/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (232e1d8a4572b15390f2752dfbf3e18f)] -&gt; id: Login]
+Session ID: 232e1d8a4572b15390f2752dfbf3e18f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at com.salesforce.pages.LoginPage.login(LoginPage.java:52)
+	at com.salesforce.testcases.DashboardPageTest.setUp(DashboardPageTest.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.salesforce.testcases.DashboardPageTest#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 30.000
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;RAHUL-DEV-GHOSH&apos;, ip: &apos;192.168.87.166&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ddbe83e02b3e648aafedfba958069d2e, clickElement {id=39ad0442-fc0e-46d5-9b6a-42c08935ad39}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\thndr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50271}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50271/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (ddbe83e02b3e648aafedfba958069d2e)] -&gt; id: Login]
+Session ID: ddbe83e02b3e648aafedfba958069d2e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy22.click(Unknown Source)
+	at com.salesforce.pages.LoginPage.login(LoginPage.java:52)
+	at com.salesforce.testcases.DashboardPageTest.setUp(DashboardPageTest.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.salesforce.testcases.AccountsPageTest#verifyUserIsAbleToCreateNewAccount</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.salesforce.util.CustomListener.onTestSuccess(CustomListener.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.salesforce.testcases.DashboardPageTest#verifyAllTabsOnDashboardPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;RAHUL-DEV-GHOSH&apos;, ip: &apos;192.168.87.166&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//span[@class=&apos;slds-p-right_small&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\thndr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50177}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50177/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy22.isDisplayed(Unknown Source)
+	at com.salesforce.pages.DashboardPage.getTextOfAllTabs(DashboardPage.java:73)
+	at com.salesforce.testcases.DashboardPageTest.verifyAllTabsOnDashboardPage(DashboardPageTest.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.salesforce.testcases.LoginPageTest#loginPageTitleTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.salesforce.util.CustomListener.onTestSuccess(CustomListener.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.salesforce.testcases.LoginPageTest#validateLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.salesforce.util.CustomListener.onTestSuccess(CustomListener.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.salesforce.testcases.DashboardPageTest#verifyAllTabsOnDashboardPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Lists differ at element [2]: Chatters != Chatter expected [Chatters] but found [Chatter]
+	at com.salesforce.testcases.DashboardPageTest.verifyAllTabsOnDashboardPage(DashboardPageTest.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.salesforce.testcases.DashboardPageTest#verifyAllTabsOnDashboardPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;4.1.4&apos;, revision: &apos;535d840ee2&apos;
+System info: host: &apos;RAHUL-DEV-GHOSH&apos;, ip: &apos;192.168.87.166&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=xpath, value=//span[@class=&apos;slds-p-right_small&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\thndr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49974}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49974/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy22.isDisplayed(Unknown Source)
+	at com.salesforce.pages.DashboardPage.getTextOfAllTabs(DashboardPage.java:73)
+	at com.salesforce.testcases.DashboardPageTest.verifyAllTabsOnDashboardPage(DashboardPageTest.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.salesforce.testcases.DashboardPageTest#verifyAllTabsOnDashboardPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Lists differ at element [2]: Chatters != Chatter expected [Chatters] but found [Chatter]
+	at com.salesforce.testcases.DashboardPageTest.verifyAllTabsOnDashboardPage(DashboardPageTest.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

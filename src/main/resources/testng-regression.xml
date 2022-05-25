@@ -4,6 +4,8 @@
 
 	<listeners>
 		<listener class-name="com.salesforce.util.ExtentReporterNG" />
+		<listener class-name="com.salesforce.util.CustomListener" />
+		<listener class-name="com.salesforce.util.MyTransformer" />
 	</listeners>
 
 	<test name="Salesforce Regression Test Cases">
@@ -16,6 +18,7 @@
 		<classes>
 			<class name="com.salesforce.testcases.LoginPageTest"></class>
 			<class name="com.salesforce.testcases.DashboardPageTest"></class>
+			<class name="com.salesforce.testcases.AccountsPageTest"></class>
 		</classes>
 	</test>
 </suite>

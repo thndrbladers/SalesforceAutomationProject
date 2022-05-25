@@ -11,6 +11,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
 
 import com.salesforce.base.TestBase;
 
@@ -96,4 +97,9 @@ public class TestUtil extends TestBase {
 		Thread.sleep(5000);
 	}
 
+	public static void executeJavascriptClick(WebElement e) {
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", e);
+	}
+	
 }
