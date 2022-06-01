@@ -1,40 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Salesforce Project Test Sanity Automation Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.salesforce.util.ExtentReporterNG"/>
-    <listener class-name="com.salesforce.util.CustomListener"/>
-    <listener class-name="com.salesforce.util.MyTransformer"/>
-  </listeners>
-  <test thread-count="5" name="Salesforce Sanity Test Cases(failed)">
-    <groups>
-      <run>
-        <include name="sanity"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.salesforce.testcases.AccountsPageTest">
+      <class name="com.salesforce.testcases.LeadsPageTest">
         <methods>
-          <include name="setUp"/>
-          <include name="verifyUserIsAbleToCreateNewAccount"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.salesforce.testcases.AccountsPageTest -->
-      <class name="com.salesforce.testcases.LoginPageTest">
-        <methods>
+          <include name="testNewLeadStatus"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="validateLogin"/>
-          <include name="loginPageTitleTest"/>
         </methods>
-      </class> <!-- com.salesforce.testcases.LoginPageTest -->
-      <class name="com.salesforce.testcases.DashboardPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="verifyAllTabsOnDashboardPage"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.salesforce.testcases.DashboardPageTest -->
+      </class> <!-- com.salesforce.testcases.LeadsPageTest -->
     </classes>
-  </test> <!-- Salesforce Sanity Test Cases(failed) -->
-</suite> <!-- Failed suite [Salesforce Project Test Sanity Automation Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
