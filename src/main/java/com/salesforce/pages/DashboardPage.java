@@ -51,6 +51,9 @@ public class DashboardPage extends TestBase {
 	@FindBy(xpath="//a[@role='menuitem']/span/span")
 	List<WebElement> moreTabMenuItems;
 	
+	@FindBy(xpath="//span[@class='slds-truncate'][normalize-space()='Leads']")
+	WebElement leadsTab;
+	
 	
 	
 	//Getters
@@ -108,6 +111,10 @@ public class DashboardPage extends TestBase {
 	public TasksPage clickOnTasksTab() {
 		tasksTab.click();
 		return new TasksPage();
+	}
+	public LeadsPage clickOnLeadsTab() {
+		TestUtil.executeJavascriptClick(leadsTab);
+		return new LeadsPage();
 	}
 	
 	
